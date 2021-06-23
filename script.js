@@ -1,0 +1,1 @@
+const count = 10;const apiKEY = 'SWoHc200wD3ATjbDTW0n-5L0bQ0kGwpvnN2ftYWMvlY'const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKEY}&count=${count}`async function getPhotos() {  try {    const response = await fetch(apiURL)    const data = await response.json()    console.log(data)  } catch (error) {    console.log(error)  }}getPhotos()
